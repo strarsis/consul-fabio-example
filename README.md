@@ -1,5 +1,5 @@
 # consul-fabio-example
-Example for fabio + consul + registrator
+Example for [fabio](https://github.com/eBay/fabio) + [consul](https://github.com/hashicorp/consul) + [registrator](https://github.com/gliderlabs/registrator)
 
 
 Usage
