@@ -1,0 +1,25 @@
+consulx1:
+  image: gliderlabs/consul-server:0.5
+  command: "-data-dir /tmp/consul -bootstrap-expect 1 -server"
+  environment:
+    - GOMAXPROCS=10
+  ports:
+    - "8500:8500" # GUI/management
+
+registrator:
+  image: gliderlabs/registrator:v6
+  volumes:
+    - /var/run/docker.sock:/tmp/docker.sock
+  command: "consul://consulx1:8500 -h"
+  links:
+    - consulx1
+
+fabio:
+  image: magiconair/fabio:1.0.6
+  volumes:
+    - ./fabio:/etc/fabio:ro
+  links:
+    - consulx1
+  ports:
+    - "9998:9998" # GUI/management
+    - "9999:9999" # HTTP exposed
