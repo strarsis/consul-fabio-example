@@ -4,7 +4,7 @@ Example for fabio + consul + registrator
 
 Usage
 -----
-Docker + docker-compose has to be installed.
+Docker + docker-compose have to be installed.
 
 Run consul, registrator, fabio:
 ````
