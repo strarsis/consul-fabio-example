@@ -19,7 +19,8 @@ Run example web node:
 cd ..
 git clone https://github.com/eBay/fabio
 cd fabio
-go get https://github.com/eBay/fabio
+export GOPATH=$(pwd)
+go get github.com/eBay/fabio
 cd ./demo/server
 go build server
 
