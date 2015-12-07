@@ -27,5 +27,7 @@ go build server
 ````
 
 127.0.0.1:8500 for consul web GUI/REST API
+
 127.0.0.1:9998 for fabio web GUI
+
 127.0.0.1:9999 for public facing HTTP
