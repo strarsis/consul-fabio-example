@@ -1,5 +1,5 @@
 # consul-fabio-example
-Example for [fabio](https://github.com/eBay/fabio) + [consul](https://github.com/hashicorp/consul) + [registrator](https://github.com/gliderlabs/registrator)
+Example for [fabio](https://github.com/eBay/fabio) + [consul](https://github.com/hashicorp/consul) + [registrator](https://github.com/gliderlabs/registrator) using [docker-compose](https://github.com/docker/compose) ([docker](https://github.com/docker/docker)).
 
 
 Usage
