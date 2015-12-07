@@ -22,7 +22,7 @@ cd fabio
 export GOPATH=$(pwd)
 go get github.com/eBay/fabio
 cd ./demo/server
-go build server
+go build server.go
 
 ./server -addr 172.17.0.1:5000 -name svc-a -prefix domain.com/foo -consul 127.0.0.1:8500
 ````
