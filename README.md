@@ -2,6 +2,10 @@
 Example for [fabio](https://github.com/eBay/fabio) + [consul](https://github.com/hashicorp/consul) + [registrator](https://github.com/gliderlabs/registrator) using [docker-compose](https://github.com/docker/compose) ([docker](https://github.com/docker/docker)).
 
 
+Note
+----
+registrator is currently commented out (disabled) in docker-compose.yaml.
+
 Usage
 -----
 Docker + docker-compose have to be installed.
