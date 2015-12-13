@@ -6,16 +6,16 @@ consulx1:
   ports:
     - "8500:8500" # GUI/management
 
-registrator:
-  image: gliderlabs/registrator:v6
-  volumes:
-    - /var/run/docker.sock:/tmp/docker.sock
-  command: "consul://consulx1:8500 -h"
-  links:
-    - consulx1
+#registrator:
+#  image: gliderlabs/registrator:v6
+#  volumes:
+#    - /var/run/docker.sock:/tmp/docker.sock
+#  command: "consul://consulx1:8500 -h"
+#  links:
+#    - consulx1
 
 fabio:
-  image: magiconair/fabio:1.0.6
+  image: magiconair/fabio:1.0.7
   volumes:
     - ./fabio:/etc/fabio:ro
   links:
